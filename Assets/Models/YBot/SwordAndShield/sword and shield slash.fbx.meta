@@ -496,7 +496,7 @@ ModelImporter:
           postInfinity: 3
           rotationOrder: 4
       events:
-      - time: 0.3489968
+      - time: 0.12203433
         functionName: ResetTrigger
         data: attack
         objectReferenceParameter: {instanceID: 0}
