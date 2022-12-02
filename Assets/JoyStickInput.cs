@@ -9,15 +9,35 @@ public class JoyStickInput : IUserInput
     public string axisY = "axisY";
     public string axisJright = "axis4";
     public string axisJup = "axis5";
+    public string axisLT = "axis9";
     public string btnA = "btn0";
     public string btnB = "btn1";
     public string btnX = "btn2";
     public string btnY = "btn3";
     public string btnRB = "btn5";
+    public string btnLB = "btn4";
+    public string btnJstick = "btn9";
+
+    public MyButton buttonA = new MyButton();
+    public MyButton buttonB = new MyButton();
+    //public MyButton buttonX = new MyButton();
+    //public MyButton buttonY = new MyButton();
+    public MyButton buttonLB = new MyButton();
+    public MyButton buttonRB = new MyButton();
+    public MyButton buttonJstick = new MyButton();
+
 
     // Update is called once per frame
     void Update()
     {
+        buttonA.Tick(Input.GetButton(btnA));
+        buttonB.Tick(Input.GetButton(btnB));
+        //buttonX.Tick(Input.GetButton(btnX));
+        //buttonY.Tick(Input.GetButton(btnY));
+        buttonLB.Tick(Input.GetButton(btnLB));
+        buttonRB.Tick(Input.GetButton(btnRB));
+        buttonJstick.Tick(Input.GetButton(btnJstick));
+
         Jup = -1 * Input.GetAxis(axisJup);
         Jright = Input.GetAxis(axisJright);
 
@@ -40,29 +60,12 @@ public class JoyStickInput : IUserInput
         Dmag = Mathf.Sqrt((Dup2 * Dup2) + (Dright2 * Dright2));
         Dvec = Dright2 * transform.right + Dup2 * transform.forward;
 
-        isRun = Input.GetButton(btnA);
-
-        bool newJump = Input.GetButton(btnB);
-        if (newJump != lastJump && newJump == true)
-        {
-            jump = true;
-        }
-        else
-        {
-            jump = false;
-        }
-        lastJump = newJump;
-
-        bool newAttack = Input.GetButton(btnRB);
-        if (newAttack != lastAttack && newAttack == true)
-        {
-            attack = true;
-        }
-        else
-        {
-            attack = false;
-        }
-        lastAttack = newJump;
+        isRun = (buttonA.IsPressing && !buttonA.IsDelaying) || buttonA.IsExtending;
+        jump = buttonA.OnPressed && buttonA.IsExtending;
+        roll = buttonA.IsDelaying && buttonA.OnReleased;
+        defense = buttonLB.IsPressing;
+        attack = buttonRB.OnPressed;
+        lockon = buttonJstick.OnPressed;
     }
 
 }
