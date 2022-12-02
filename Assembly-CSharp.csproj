@@ -58,15 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\MyTimer.cs" />
     <Compile Include="Assets\RootMotionControl.cs" />
-    <Compile Include="Assets\KeyboardInput.cs" />
-    <Compile Include="Assets\JoyStickInput.cs" />
     <Compile Include="Assets\LeftArmAnimrFix.cs" />
     <Compile Include="Assets\FSMOnExit.cs" />
     <Compile Include="Assets\FSMOnEnter.cs" />
-    <Compile Include="Assets\IUserInput.cs" />
-    <Compile Include="Assets\ActorController.cs" />
     <Compile Include="Assets\OnGroundSensor.cs" />
-    <Compile Include="Assets\CameraController.cs" />
     <Compile Include="Assets\FSMOnGroundEnter.cs" />
     <Compile Include="Assets\TriggerControl.cs" />
     <Compile Include="Assets\MyButton.cs" />
