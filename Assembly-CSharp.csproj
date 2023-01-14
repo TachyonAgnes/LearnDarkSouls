@@ -56,24 +56,34 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MyTimer.cs" />
-    <Compile Include="Assets\RootMotionControl.cs" />
-    <Compile Include="Assets\KeyboardInput.cs" />
-    <Compile Include="Assets\JoyStickInput.cs" />
-    <Compile Include="Assets\LeftArmAnimrFix.cs" />
-    <Compile Include="Assets\FSMOnExit.cs" />
-    <Compile Include="Assets\FSMOnEnter.cs" />
-    <Compile Include="Assets\IUserInput.cs" />
-    <Compile Include="Assets\ActorController.cs" />
-    <Compile Include="Assets\OnGroundSensor.cs" />
-    <Compile Include="Assets\CameraController.cs" />
-    <Compile Include="Assets\FSMOnGroundEnter.cs" />
-    <Compile Include="Assets\TriggerControl.cs" />
-    <Compile Include="Assets\MyButton.cs" />
-    <Compile Include="Assets\TestorJoyStick.cs" />
-    <Compile Include="Assets\FSMClearSignals.cs" />
-    <Compile Include="Assets\FSMOnUpdate.cs" />
-    <Compile Include="Assets\TestorFSMOnEnter.cs" />
+    <Compile Include="Assets\Script\MyTimer.cs" />
+    <Compile Include="Assets\Script\ActorManager.cs" />
+    <Compile Include="Assets\Script\RootMotionControl.cs" />
+    <Compile Include="Assets\Script\KeyboardInput.cs" />
+    <Compile Include="Assets\Script\JoyStickInput.cs" />
+    <Compile Include="Assets\Script\Helper\TransformHelpers.cs" />
+    <Compile Include="Assets\Script\LeftArmAnimrFix.cs" />
+    <Compile Include="Assets\Script\FSMOnExit.cs" />
+    <Compile Include="Assets\Script\tempUI.cs" />
+    <Compile Include="Assets\Script\StateManager.cs" />
+    <Compile Include="Assets\Script\DummyIUserInput.cs" />
+    <Compile Include="Assets\Script\FSMOnEnter.cs" />
+    <Compile Include="Assets\Script\IUserInput.cs" />
+    <Compile Include="Assets\Script\ActorController.cs" />
+    <Compile Include="Assets\Script\OnGroundSensor.cs" />
+    <Compile Include="Assets\Script\CameraController.cs" />
+    <Compile Include="Assets\Script\TesterHit.cs" />
+    <Compile Include="Assets\Script\FSMOnGroundEnter.cs" />
+    <Compile Include="Assets\Script\BattleManager.cs" />
+    <Compile Include="Assets\Script\TriggerControl.cs" />
+    <Compile Include="Assets\Script\MyButton.cs" />
+    <Compile Include="Assets\Script\IActorManagerInterface.cs" />
+    <Compile Include="Assets\Script\TestorJoyStick.cs" />
+    <Compile Include="Assets\Script\FSMClearSignals.cs" />
+    <Compile Include="Assets\Script\FSMOnUpdate.cs" />
+    <Compile Include="Assets\Script\WeaponManager.cs" />
+    <Compile Include="Assets\Script\TestorFSMOnEnter.cs" />
+    <Compile Include="Assets\Script\WeaponController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
