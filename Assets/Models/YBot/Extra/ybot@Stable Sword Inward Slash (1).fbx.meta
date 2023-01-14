@@ -8,7 +8,7 @@ ModelImporter:
     second: Stable Sword Inward Slash (1)
   - first:
       74: -547057506830179536
-    second: Stable Sword Inward Slash
+    second: attach1hB
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -39,7 +39,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Stable Sword Inward Slash
+      name: attach1hB
       takeName: mixamo.com
       internalID: 0
       firstFrame: 21
@@ -66,6 +66,20 @@ ModelImporter:
       - time: 0.09471275
         functionName: ResetTrigger
         data: attack
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.30654204
+        functionName: WeaponEnable
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.39222252
+        functionName: WeaponDisable
+        data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
